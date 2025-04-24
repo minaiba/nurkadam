@@ -5,9 +5,15 @@ export default function Section() {
 <div
   className="relative w-full bg-cover bg-center text-white animate-moveBg"
 >
-  <div className="absolute inset-0 bg-neutral-600 z-0" />
-  <div className="relative z-10 max-w-[1200px] mx-auto px-6 py-32 flex flex-col md:flex-row items-center justify-between">
-    <div className="mb-10 md:mb-0 md:mr-10">
+  <div className="absolute inset-0 h-screen z-0" style={{
+      width: '100%',
+      height: '100vh',
+      background: 'linear-gradient(to bottom, #000000, #1e3a8a, #3b82f6, #1e40af, #000000)',
+      backgroundSize: '400% 400%',
+      animation: 'gradientAnimation 15s ease infinite'
+    }}/>
+  <div className="relative z-10 max-w-[1200px] mx-auto px-6 py-28 flex flex-col md:flex-row items-center justify-between">
+    <div className="mb-14 md:mb-0 md:mr-10">
       <div className="speed">
         <div className="speed__wheel">
           <div className="speed__tick">
